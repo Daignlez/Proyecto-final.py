@@ -1,15 +1,24 @@
 from tkinter import *
 from random import randint
-
 letras_usadas=[] #creo una lista vacia
 def funcion_probarletra():
     letras_usadas.append(letraObtenida.get())  #agrega las letras del boton al final de la lista
-    print(letras_usadas)  #imprime las letras usadas
-Ventana=Tk()#crea una ventana y su configuracion.
-archivo=open("palabras.py","r") #creo un archivo y abro palabras.py solo en forma de lectura.
-conjuntodepalabras= archivo.read().split("\n")
-palabra=conjuntodepalabras[randint(0,len(conjuntodepalabras))-1]
+    print(letras_usadas)  #imprime las letras usadas 
+  #if letraObtenida.get() in palabra:  #si nuestra letra obtenida (.get=traer la letra de nuestra entry) entonces ramplaza un guion por una letra
+        #if palabra.count(letraObtenida.get())>1: #count cuenta las veces se repite una letra en una palabra y si esto es mayor que uno
+           # for i in range(len(palabra)):        #entonces hay que descubrir las otras letras
+             ##   if palabra[i]==letraObtenida.get():    #comprobacion, donde recorre toda la palbra y coloca la letra intoducida entonces cambiamos de guion a letra
+                   ## guiones[i].confing(text=""+letraObtenida.get())
+      #  else:
+           # guiones[palabra.index(letraObtenida.get())].config(text=""+letraObtenida.get())""" #si solo hay una letra y no se repite entonces cambiamos de guion a letra
 
+
+Ventana=Tk()#crea una ventana y su configuracion.
+
+archivo=open("palabras.txt","r") #creo un archivo y abro palabras.py solo en forma de lectura.
+conjuntodepalabras=list(archivo.read().split(","))
+
+palabra=conjuntodepalabras[randint(0,len(conjuntodepalabras))-1]
 letraObtenida=StringVar()
 Ventana.title("Juego del ahorcado")
 Ventana.config(width=1000,height=600,bg="purple",relief="groove",bd=10)
