@@ -1,1 +1,2 @@
-aire,ojos,piel,
+oso,gato,uva,perro,montaña,cuchara,bicicleta,sol,árbol,libro,felicidad,mariposa,lápiz,música,chocolate,computadora,lluvia,amor,sandía,otoño,amistad,aventura,globo,abrazo,estrella,pizza,arcoíris,sueño,helado,risa,viento,playa,nube,serenidad,cafetería,guitarra,danza,río,recuerdo,jardín,manzana,árbol,puerta,río,camino,cuchillo,televisión,arena,gato,campana,tormenta,estrella,botella,ventana,tierra,computadora,puente,silla,arcoíris,ojos,puerta,serpiente,clave.
+
